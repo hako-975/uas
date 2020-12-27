@@ -45,11 +45,15 @@ main()
 	
 	float nilai_angka;
 	char grade;
-	
+
 	do
 	{	
+		gotoxy(33, 1);
+		cout<<"PROGRAM NILAI HASIL PERKULIAHAN MAHASISWA"<<endl;
+		gotoxy(50, 2);
+		cout<<"KELOMPOK 1"<<endl;
 		// input nim
-		gotoxy(2,1);
+		gotoxy(2,4);
 		cout<<"Masukkan NIM : ";
 		cin>>nim;
 		
@@ -63,37 +67,37 @@ main()
 		}
 		
 		// input nama_mhs
-		gotoxy(2,2);
+		gotoxy(2,5);
 		cout << "Masukkan Nama Mahasiswa : ";
 		getline(cin, nama_mhs);
 		
 		// input mata_kuliah
-		gotoxy(2,3);
+		gotoxy(2,6);
 		cout << "Masukkan Mata Kuliah : ";
 		getline(cin, mata_kuliah);
 	
 		// input sks
-		gotoxy(2,4);
+		gotoxy(2,7);
 		cout<<"Masukkan SKS : ";
 		cin>>sks;
 	
 		// input jumlah_kehadiran
-		gotoxy(2,5);
+		gotoxy(2,8);
 		cout<<"Masukkan Jumlah Kehadiran : ";
 		cin>>jumlah_kehadiran;
 	
 		// input nilai_tugas
-		gotoxy(2,6);
+		gotoxy(2,9);
 		cout<<"Masukkan Nilai Tugas : ";
 		cin>>nilai_tugas;
 	
 		// input nilai_uts
-		gotoxy(2,7);
+		gotoxy(2,10);
 		cout<<"Masukkan Nilai UTS : ";
 		cin>>nilai_uts;
 	
 		// input nilai_uas
-		gotoxy(2,8);
+		gotoxy(2,11);
 		cout<<"Masukkan Nilai UAS : ";
 		cin>>nilai_uas;
 		
@@ -135,6 +139,10 @@ main()
 		{
 			grade = 'D';
 		}		
+		
+		gotoxy(2,13);
+		cout<<"=================================================================================================";
+
 		tampil(mata_kuliah, 
 			sks, 
 			nim, 
@@ -145,7 +153,6 @@ main()
 			nilai_uas, 
 			nilai_angka, 
 			grade);	
-		
 		cout<<endl;
 		system("pause");
 		system("cls");
@@ -167,57 +174,57 @@ void tampil(string mata_kuliah,
 			float nilai_angka, 
 			char grade)
 {
-	cetak(4,11,"NAMA MATA KULIAH : ");
+	cetak(4,15,"NAMA MATA KULIAH : ");
 	cout<<mata_kuliah;
-	cetak(4,12,"SKS");
-	cetak(20,12, " : ");
+	cetak(4,16,"SKS");
+	cetak(20,16, " : ");
 	cout<<sks;
-	cetak(4,13,"===============================================================================================");
-	cetak(4,14,"|");
-	cetak(10,14,"NIM");
-	cetak(19,14,"|");
-	cetak(27,14,"N A M A");
-	cetak(44,14,"|");
-	cetak(46,14,"JML HADIR");
-	cetak(56,14,"|");
-	cetak(58,14,"TUGAS");
-	cetak(64,14,"|");
-	cetak(66,14,"UTS");
-	cetak(70,14,"|");
-	cetak(72,14,"UAS");
-	cetak(76,14,"|");
-	cetak(78,14,"NILAI ANGKA");
-	cetak(90,14,"|");
-	cetak(92,14,"GRADE");
-	cetak(98,14,"|");
-	cetak(4,15,"===============================================================================================");
-	cout<<endl;
-	cetak(4,16,"|");
-	cetak(6,16,""); cout<<nim;
-	
-	cetak(19,16,"|");
-	cetak(21,16,""); cout<<nama_mhs;
-	
-	cetak(44,16,"|");
-	cetak(46,16,""); cout<<jumlah_kehadiran;
-	
-	cetak(56,16,"|");
-	cetak(58,16,""); cout<<nilai_tugas;
-	
-	cetak(64,16,"|");
-	cetak(66,16,""); cout<<nilai_uts;
-	
-	cetak(70,16,"|");
-	cetak(72,16,""); cout<<nilai_uas;
-	
-	cetak(76,16,"|");
-	cetak(78,16,""); cout<<nilai_angka;
-	
-	cetak(90,16,"|");
-	cetak(92,16,""); cout<<grade;
-	
-	cetak(98,16,"|");
 	cetak(4,17,"===============================================================================================");
+	cetak(4,18,"|");
+	cetak(10,18,"NIM");
+	cetak(19,18,"|");
+	cetak(27,18,"N A M A");
+	cetak(44,18,"|");
+	cetak(46,18,"JML HADIR");
+	cetak(56,18,"|");
+	cetak(58,18,"TUGAS");
+	cetak(64,18,"|");
+	cetak(66,18,"UTS");
+	cetak(70,18,"|");
+	cetak(72,18,"UAS");
+	cetak(76,18,"|");
+	cetak(78,18,"NILAI ANGKA");
+	cetak(90,18,"|");
+	cetak(92,18,"GRADE");
+	cetak(98,18,"|");
+	cetak(4,19,"===============================================================================================");
+	cout<<endl;
+	cetak(4,20,"|");
+	cetak(6,20,""); cout<<nim;
+	
+	cetak(19,20,"|");
+	cetak(21,20,""); cout<<nama_mhs;
+	
+	cetak(44,20,"|");
+	cetak(46,20,""); cout<<jumlah_kehadiran;
+	
+	cetak(56,20,"|");
+	cetak(58,20,""); cout<<nilai_tugas;
+	
+	cetak(64,20,"|");
+	cetak(66,20,""); cout<<nilai_uts;
+	
+	cetak(70,20,"|");
+	cetak(72,20,""); cout<<nilai_uas;
+	
+	cetak(76,20,"|");
+	cetak(78,20,""); cout<<nilai_angka;
+	
+	cetak(90,20,"|");
+	cetak(92,20,""); cout<<grade;
+	
+	cetak(98,20,"|");
+	cetak(4,21,"===============================================================================================");
 	cout<<endl;
 }
 
