@@ -54,7 +54,9 @@ main()
 		cout<<"KELOMPOK 1"<<endl;
 		// input nim
 		gotoxy(2,4);
-		cout<<"Masukkan NIM : ";
+		cout<<"Masukkan NIM";
+		gotoxy(28,4);
+		cout<<" : ";
 		cin>>nim;
 		
 		// meng-ignore karakter agar dapat menginput getline pd baris berikutnya
@@ -68,37 +70,51 @@ main()
 		
 		// input nama_mhs
 		gotoxy(2,5);
-		cout << "Masukkan Nama Mahasiswa : ";
+		cout << "Masukkan Nama Mahasiswa";
+		gotoxy(28,5);
+		cout<<" : ";
 		getline(cin, nama_mhs);
 		
 		// input mata_kuliah
 		gotoxy(2,6);
-		cout << "Masukkan Mata Kuliah : ";
+		cout << "Masukkan Mata Kuliah";
+		gotoxy(28,6);
+		cout<<" : ";
 		getline(cin, mata_kuliah);
 	
 		// input sks
 		gotoxy(2,7);
-		cout<<"Masukkan SKS : ";
+		cout<<"Masukkan SKS";
+		gotoxy(28,7);
+		cout<<" : ";
 		cin>>sks;
 	
 		// input jumlah_kehadiran
 		gotoxy(2,8);
-		cout<<"Masukkan Jumlah Kehadiran : ";
+		cout<<"Masukkan Jumlah Kehadiran";
+		gotoxy(28,8);
+		cout<<" : ";
 		cin>>jumlah_kehadiran;
 	
 		// input nilai_tugas
 		gotoxy(2,9);
-		cout<<"Masukkan Nilai Tugas : ";
+		cout<<"Masukkan Nilai Tugas";
+		gotoxy(28,9);
+		cout<<" : ";
 		cin>>nilai_tugas;
 	
 		// input nilai_uts
 		gotoxy(2,10);
-		cout<<"Masukkan Nilai UTS : ";
+		cout<<"Masukkan Nilai UTS";
+		gotoxy(28,10);
+		cout<<" : ";
 		cin>>nilai_uts;
 	
 		// input nilai_uas
 		gotoxy(2,11);
-		cout<<"Masukkan Nilai UAS : ";
+		cout<<"Masukkan Nilai UAS";
+		gotoxy(28,11);
+		cout<<" : ";
 		cin>>nilai_uas;
 		
 		if(jumlah_kehadiran && nilai_tugas && nilai_uts && nilai_uas > 0)
